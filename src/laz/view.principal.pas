@@ -104,6 +104,11 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  // Ele cobrirá a área inteira
+  TDINoteBook1.Align:=alClient;
+  // Se as janelas suas tiver um botão de fechar ou sair então é bom
+  // esconder o botão de fechar "X" na tab
+  //TDINoteBook1.CloseTabButtom:=tbNone;
   // nboHidePageListPopup: Não tem popup para mostrar as tabs(paginas)
   // nboShowAddTabButton: Não mostra opção para adicionar nova tab
   // nboShowCloseButtons: Botões de fechar não serão exibidos
@@ -123,6 +128,7 @@ begin
   // A primeira tab nunca poderá ser fechada
   // Isso garante que sempre terá uma tab
   TDINoteBook1.FixedPages:=0;
+
 end;
 
 end.
