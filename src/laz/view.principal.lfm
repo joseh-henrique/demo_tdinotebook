@@ -1,18 +1,18 @@
 object Form1: TForm1
   Left = 285
-  Height = 1
+  Height = 546
   Top = 32
-  Width = 1
+  Width = 832
   Caption = 'Form1'
-  ClientHeight = 1
-  ClientWidth = 1
+  ClientHeight = 546
+  ClientWidth = 832
   Menu = MainMenu1
   OnCreate = FormCreate
   object TDINoteBook1: TTDINoteBook
     Left = 0
-    Height = 487
+    Height = 546
     Top = 0
-    Width = 945
+    Width = 832
     ActivePage = TabSheet1
     Align = alClient
     ShowTabs = False

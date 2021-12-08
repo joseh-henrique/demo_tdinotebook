@@ -49,14 +49,17 @@ procedure TForm1.actClientesExecute(Sender: TObject);
 var
   i:Integer;
 begin
+  // O codigo abaixo é para ser didático, você que é experiente cortará
+  // metade dessas linhas
   i:=TDINoteBook1.FindFormInPages(fmClientes);
-  if i<0 then
+  if i<0 then  // não existe, então cria
   begin
     fmClientes:=TfmClientes.Create(Self);
     TDINoteBook1.ShowFormInPage(fmClientes, 0);
   end
   else
   begin
+    // se existe, então é apenas embutir na tab 0
     TDINoteBook1.ShowFormInPage(fmClientes, 0);
   end;
 end;
@@ -65,14 +68,17 @@ procedure TForm1.actFornecedoresExecute(Sender: TObject);
 var
   i:Integer;
 begin
+  // O codigo abaixo é para ser didático, você que é experiente cortará
+  // metade dessas linhas
   i:=TDINoteBook1.FindFormInPages(fmFornecedores);
-  if i<0 then
+  if i<0 then  // não existe, então cria
   begin
     fmFornecedores:=TfmFornecedores.Create(Self);
     TDINoteBook1.ShowFormInPage(fmFornecedores, 0);
   end
   else
   begin
+    // se existe, então é apenas embutir na tab 0
     TDINoteBook1.ShowFormInPage(fmFornecedores, 0);
   end;
 end;
@@ -81,14 +87,17 @@ procedure TForm1.actRepresentantesExecute(Sender: TObject);
 var
   i:Integer;
 begin
+  // O codigo abaixo é para ser didático, você que é experiente cortará
+  // metade dessas linhas
   i:=TDINoteBook1.FindFormInPages(fmRepresentantes);
-  if i<0 then
+  if i<0 then  // não existe, então cria
   begin
     fmRepresentantes:=TfmRepresentantes.Create(Self);
     TDINoteBook1.ShowFormInPage(fmRepresentantes, 0);
   end
   else
   begin
+    // se existe, então é apenas embutir na tab 0
     TDINoteBook1.ShowFormInPage(fmRepresentantes, 0);
   end;
 end;
