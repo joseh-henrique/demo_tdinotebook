@@ -1,11 +1,11 @@
 object Form1: TForm1
   Left = 285
-  Height = 487
+  Height = 1
   Top = 32
-  Width = 945
+  Width = 1
   Caption = 'Form1'
-  ClientHeight = 487
-  ClientWidth = 945
+  ClientHeight = 1
+  ClientWidth = 1
   Menu = MainMenu1
   OnCreate = FormCreate
   object TDINoteBook1: TTDINoteBook
